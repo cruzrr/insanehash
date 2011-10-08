@@ -33,7 +33,7 @@ The easiest way:
 
 1. Download it.  
 2. Put the file **at the root of you application**.  
-3. Put `var insane = require('./insanehash').crypto;` in your app.js (or where you want). PS: `.crypto` = namespace ;)  
+3. Put `var insane = require('./insanehash').insanehash;` in your app.js (or where you want). PS: `.insanehash` = namespace ;)  
 4. Call `insane.skein('Hi!');` where you want. PS: `.skein` is one of the six implemented algorithm. 
 5. You will get this **big 1024bits string**: *6dbe952ab5ec3bf45a82887953953e3220e1eab7ae9069ae548ac8561691378993210ca0cb0666656614ef858fca9893a9bb6fe149dca792c910d6518aecdd30*  
 
@@ -41,6 +41,6 @@ The workaround way: (**it will be different soon, i promisse!**)
 
 1. Download it.  
 2. Put the file **in a insanehash directory** (_create one_) at the **node_modules folder**.  
-3. Put `var insane = require('insanehash').crypto;` in your app.js (or where you want). PS: `.crypto` = namespace ;)  
+3. Put `var insane = require('insanehash').insanehash;` in your app.js (or where you want). PS: `.insanehash` = namespace ;)  
 4. Call `insane.skein('Hi!');` where you want. PS: `.skein` is one of the six implemented algorithm.  
 5. You will get this **big 1024bits string**: *6dbe952ab5ec3bf45a82887953953e3220e1eab7ae9069ae548ac8561691378993210ca0cb0666656614ef858fca9893a9bb6fe149dca792c910d6518aecdd30*  
