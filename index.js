@@ -1,1 +1,1 @@
-module.exports = require('./lib/crypto');
+module.exports = require('./lib/insanehash');

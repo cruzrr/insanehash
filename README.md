@@ -20,7 +20,6 @@ The **lastest SHA3 cryptographic hash algorithm from NIST Hash Competition** bas
   * CubeHash16/64-256 is supported in cubehash.js and cubehash.min.js
 * **Keccak**, by Bertoni, Daemen, Peeters, and van Assche
   * The 64-bit SHA3-256 candidate Keccak[1088, 512, 32] is supported in keccak.js and keccak.min.js as a "standards-compliant" version.
-  * The 32-bit Keccak version Keccak[256, 544, 0] is supported in keccak32.js and keccak32.min.js as my "shortest available implementation" version.
 * **Shabal**, by Bresson, Canteaut, Chevalier-Mames, Clavier, Fuhr, Gouget, Icart, Misarsky, Plasencia, Paillier, Pornin, Reinhard, Thuillet, and Videau
   * Shabal-256 is supported in shabal.js and shabal.min.js.
 * **Skein**, by Bellare, Callas, Ferguson, Kohno, Lucks, Schneier, Walker, and Whiting
@@ -45,14 +44,3 @@ The workaround way: (**it will be different soon, i promisse!**)
 3. Put `var insane = require('insanehash').crypto;` in your app.js (or where you want). PS: `.crypto` = namespace ;)  
 4. Call `insane.skein('Hi!');` where you want. PS: `.skein` is one of the six implemented algorithm.  
 5. You will get this **big 1024bits string**: *6dbe952ab5ec3bf45a82887953953e3220e1eab7ae9069ae548ac8561691378993210ca0cb0666656614ef858fca9893a9bb6fe149dca792c910d6518aecdd30*  
-
-#Sua procura acabou!
-
-* Você precisa de criptografia de **verdade** e **séria**?  
-* Você acha que o MD6 já é velho (e fraco) e quer algo como os **algoritmos finalistas para o SHA3**?  
-* Você usa o **NodeJS**, sabe que existe boas bibliotecas por ai, mas você é do tipo **cutting edge**?  
-
-Então relaxa, pois **realizei seu sonho**! :)  
-Conheça o **InsaneHash** (_logo no NPM install -g mais perto de você_).
-
-OBS: Em **Javascript**, claro!
