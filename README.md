@@ -33,14 +33,18 @@ The easiest way:
 
 1. Download it.  
 2. Put the file **at the root of you application**.  
-3. Put `var insane = require('./insanehash').insanehash;` in your app.js (or where you want). PS: `.insanehash` = namespace ;)  
-4. Call `insane.skein('Hi!');` where you want. PS: `.skein` is one of the six implemented algorithm. 
-5. You will get this **big 1024bits string**: *6dbe952ab5ec3bf45a82887953953e3220e1eab7ae9069ae548ac8561691378993210ca0cb0666656614ef858fca9893a9bb6fe149dca792c910d6518aecdd30*  
+3. Require it as `var insane = require('./insanehash').insanehash;` PS: `.insanehash` = namespace ;)  
+4. Call this. You will get a **string** with the hash.
+  * `insanehash.blake32('Hi!');` -> 'ceb42cb8ab21fe511b85ecd74933b9f4aafa4d1c67da0778b69e375245942314'  
+  * `insanehash.shabal('Hi!');` -> '0427065214b9a8ea2d79c73a1a2d02ea3f9c4f71d4c73a30ad2c0bc8b1c172d9'  
+  * `insanehash.bmw('Hi!');` -> '44fe7f399277b09b8e892a80522b833703abacd5fc7f71da6db96999ca4bdb06'  
+  * `insanehash.skein('Hi!');` -> '6dbe952ab5ec3bf45a82887953953e3220e1eab7ae9069ae548ac8561691378993210ca0cb0666656614ef858fca9893a9bb6fe149dca792c910d6518aecdd30'  
+  * `insanehash.cubehash('Hi!');` -> 'a206bffa3c77a6410270f061e6b264fd79d1a997c06d444ee1bba42cff2b66d3'  
+  * `insanehash.halfskein('Hi!');` -> '39edf053bf6be95f1af2476f83fbf9b71fa0e3188361def18c879a9f09370f8a'  
+  * `insanehash.keccak('Hi!');` -> '22dd5d47d9cb35a05e3022a7bac1a39547da7b303aba89cbe9205046d1f0762c'  
 
 The workaround way: (**it will be different soon, i promisse!**)  
 
 1. Download it.  
 2. Put the file **in a insanehash directory** (_create one_) at the **node_modules folder**.  
-3. Put `var insane = require('insanehash').insanehash;` in your app.js (or where you want). PS: `.insanehash` = namespace ;)  
-4. Call `insane.skein('Hi!');` where you want. PS: `.skein` is one of the six implemented algorithm.  
-5. You will get this **big 1024bits string**: *6dbe952ab5ec3bf45a82887953953e3220e1eab7ae9069ae548ac8561691378993210ca0cb0666656614ef858fca9893a9bb6fe149dca792c910d6518aecdd30*  
+3. Put `var insane = require('insanehash').insanehash;`
