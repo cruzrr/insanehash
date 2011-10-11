@@ -11,6 +11,5 @@
   "directories": {},
   "engines": {"node": ">= 0.4.8"},
   "dependencies": {},
-  "main": "./index",
-  "time": {"0.0.1": "2011-10-07T21:49:36.323Z"}
+  "main": "./index"
 }
